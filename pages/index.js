@@ -17,7 +17,9 @@ export default function Home() {
         {address ? (
           <>
             <div className="flex h-[100vh] justify-center items-center">
-              <h1>Logged in with {address}</h1>
+              <h1 className="text-xl font-bold">
+                Logged in with <span className="text-green-200">{address}</span>
+              </h1>
             </div>
           </>
         ) : (
